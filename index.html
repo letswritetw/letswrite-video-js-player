@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Video.js 使用筆記：中文介面、取值、事件、改樣式 - August - Let's Write</title>
+    <link rel="canonical" href="https://www.letswrite.tw/video-js-player/"/>
+    <meta property="og:url" content="https://letswritetw.github.io/letswrite-video-js-player/"/>
+    <meta property="fb:app_id" content="911000986339138"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Let's Write"/>
+    <meta property="og:title" content="Video.js 使用筆記：中文介面、取值、事件、改樣式 - Augustus - Let's Write"/>
+    <meta itemprop="name" content="Video.js 使用筆記：中文介面、取值、事件、改樣式 - Augustus - Let's Write"/>
+    <meta name="description" content="Video.js 使用筆記：中文介面、取值、事件、改樣式"/>
+    <meta property="og:description" content="Video.js 使用筆記：中文介面、取值、事件、改樣式"/>
+    <meta itemprop="description" content="Video.js 使用筆記：中文介面、取值、事件、改樣式"/>
+    <meta itemprop="image" content="https://letswritetw.github.io/letswrite-video-js-player/fb.jpg"/>
+    <meta property="og:image" content="https://letswritetw.github.io/letswrite-video-js-player/fb.jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Video.js 使用筆記：中文介面、取值、事件、改樣式"/>
+    <link rel="shortcut icon" href="https://letswritetw.github.io/letswritetw/dist/img/logo_512.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/bamboo.css/dist/dark.min.css" media="screen"/>
+    <link rel="stylesheet" href="https://unpkg.com/video.js@7/dist/video-js.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"/>
+    <link rel="stylesheet" href="dist/vjs-theme-letswrite.min.css"/>
+    <link rel="stylesheet" href="dist/style.min.css" media="screen"/>
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PGQ9WQT');
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="container">
+      <h1>Video.js 使用筆記：中文介面、取值、事件、改樣式</h1>
+      <hr/>
+      <video class="video-js vjs-fluid vjs-theme-letswrite" id="video-js" data-setup="{}" controls="controls" preload="auto" controlsList="nodownload">
+        <source src="dist/sample.mp4" type="video/mp4"/>
+        <p class="vjs-no-js">您的瀏覽器不支援 Javascript</p>
+      </video>
+      <h5>切換 Theme</h5>
+      <div class="vjs-theme">
+        <button type="button" data-theme="letswrite" style="background-color: #42A6F7">Let's Write</button>
+        <button type="button" data-theme="city" style="background-color: #bf3b4d">City</button>
+        <button type="button" data-theme="fantasy" style="background-color: #9f44b4">Fantasy</button>
+        <button type="button" data-theme="forest" style="background-color: #6fb04e">Forest</button>
+        <button type="button" data-theme="sea" style="background-color: #4176bc">Sea</button>
+      </div>
+      <h5>Console 顯示在這</h5>
+      <textarea id="textarea" rows="2" disabled="disabled"></textarea>
+      <h6>API 文件：<a href="https://docs.videojs.com/index.html" target="_blank">Video.js Documentation</a></h6>
+      <hr/>
+      <h6>範例影片來源：<a href="https://pixabay.com/videos/sea-iceland-ocean-water-sky-33194/" target="_blank">https://pixabay.com/videos/sea-iceland-ocean-water-sky-33194/</a></h6>
+      <hr/>
+    </div>
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+    <script src="dist/main.min.js"></script>
+  </body>
+</html>
